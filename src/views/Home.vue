@@ -1,6 +1,5 @@
 <template> 
  <div class="home">
-   <div class="container">
       <div id="nav">
         <div class="nav-content">
           <div class="left-nav">
@@ -23,14 +22,15 @@
 
           <div class="right-nav">
             <div class="btn-clear">
-              <button>Se connecter</button>
+               <router-link to="/Se-connector">
+                  <button>Se connecter</button>
+               </router-link>
             </div>
 
           <div class="btn-fill-primary">
             <button>Essayer gratuitement</button>
           </div>
           </div>
-        </div>
 
       <!-- <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link> -->
@@ -59,9 +59,30 @@
         </div>
       </div>
     </div>
+   
+    <div class="showcase-section">
+      <div class="container">
+          <h1 class="showcase-head">Pourquoi déléguer votre approvisionnement à Pharma-You Pro ?</h1>
 
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <!-- <HelloWorld /> -->
+          <ul class="showcase-content">
+            <li class="showcase-item">
+                <img src="../assets/Homepage/showcase-icon1.png" alt="showcase-icon">
+                <h5>Rapidité</h5>
+                <p>Lorem ipsum dolor sit amet, <br> consectetur adipiscing elit,</p>
+            </li>
+            <li class="showcase-item">
+                <img src="../assets/Homepage/showcase-icon2.png" alt="showcase-icon">
+                <h5>Sécurité</h5>
+                <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit,</p>
+            </li>
+            <li class="showcase-item">
+                <img src="../assets/Homepage/showcase-icon3.png" alt="showcase-icon">
+                <h5>Simplicité</h5>
+                <p>Lorem ipsum dolor sit amet, <br>consectetur adipiscing elit,</p>
+            </li>
+          </ul>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -81,13 +102,15 @@ export default {
   .container{
     max-width: 1500px;
     display: block;
-    overflow-x: hidden;
+    /* overflow-x: hidden; */
     margin: 0 auto;;
   }
 
   .nav-content{
     display: flex;
     justify-content: space-between;
+    max-width: 1550px;
+    margin: 0 auto;
   }
   .logo{
     /* background: red; */
@@ -162,7 +185,7 @@ export default {
     width: 40%;
     /* max-width: 768px; */
     /* background: rgb(0, 255, 21); */
-    height: 400px;
+    height: 500px;
     margin: auto 0 auto 3em;
     z-index: 2;
   }
@@ -179,12 +202,13 @@ export default {
     margin: 1em 0;
     font-size: 47px;
    font-family: 'Roboto', sans-serif;
+   font-weight: 600;
   }
   .home-content h1 span{
     /* letter-spacing: 5px; */
-    word-spacing: 10px;
+    word-spacing: 5px;
     white-space: nowrap;
-    line-height: 1.2;
+    line-height: 1.3;
   }
   .home-content .text-black{
     font-size: 24px;
@@ -214,6 +238,7 @@ export default {
   .home-content .text-sm{
     display: block;
     font-size: 20px;
+    color: #212121
   }
 
   .home-showcase{
@@ -226,4 +251,41 @@ export default {
     width: 100%;
     z-index: -1
   }
+</style>
+
+// Showcase section styles
+
+<style scoped>
+  .showcase-section{
+    margin: 7em 0;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+}
+  .showcase-head{
+    font-size: 46px;
+    margin: 2em 0;
+  }
+
+  .showcase-content{
+    display: flex;
+    justify-content: space-between;
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .showcase-content .showcase-item{}
+  .showcase-item{}
+  .showcase-item img{
+    width: 147px;
+    height: 147px;
+  }
+  .showcase-item h5{
+    font-size: 40px;
+    display: block;
+    margin: 1em 0;
+  }
+  .showcase-item p{
+    font-size: 20px;
+    line-height: 1.3;
+    color: #212121;
+}
 </style>

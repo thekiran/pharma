@@ -1,5 +1,6 @@
 <template>
   <router-view/>
+  <div class="space" style="height:200px;"></div>
 </template>
 
 <style>
@@ -48,17 +49,26 @@
 		border-collapse: collapse;
 		border-spacing: 0;
 	}
-
+	a{all: unset;cursor: pointer;}
 	/* css rest end  */
 
+</style>
+
+<style>
+	@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+	@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 	body{
 		--primary-saf-color: #FF5614;
 		--nav-blue: #3498DB;
 		--black: #000000;
-		}
-</style>
+	}
 
-/* Fonts */
-<style>
-	@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+	.container{
+		/* font-family: 'Open Sans', sans-serif; */
+		max-width: 1500px;
+		display: block;
+		/* overflow-x: hidden; */
+		margin: 0 auto;;
+	}
+
 </style>
