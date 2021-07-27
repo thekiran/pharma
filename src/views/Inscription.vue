@@ -1,5 +1,5 @@
  <template> 
-      <div class="se-con-container">
+      <div class="Inscription">
         <div class="nav-content">
             <div class="container">
 
@@ -15,10 +15,58 @@
                 </div>
 
             </div>
-
         </div>
 
-  </div>
+        <div class="ins-content">
+          <div class="container">
+
+              <h1>Inscription en 2 clics</h1>
+
+              <img src="../assets/Inscription/stepper-3.png" alt="steps">
+            </div>
+          </div>
+
+
+          <div class="showcase-section">
+            <div class="container">
+                <div class="showcase-content">
+                  <form>
+
+                    <div class="showcase-content-box">
+                      <div class="form left">
+                        <label id="formail" for="mail">Nom</label>
+                        <input type="text" name="mail" id="mail" placeholder="Magalie marchale">
+
+                        <label id="foraddress" for="address">Adresse email</label>
+                        <input type="text" name="address" id="address" placeholder="john.doe@domain.tld">
+
+                        <label id="forpassword" for="password">Mot de passe</label>
+                        <input type="text" name="password" id="password" placeholder="******">
+
+                      </div>
+                    </div>
+
+                    <div class="showcase-content-box">
+
+                      <div class="form right">
+                        <label id="fororg" for="org">Nom de votre organisation</label>
+                        <input type="text" name="org" id="org" placeholder="Hôpitaux de Paris">
+
+                        <label id="fornumber" for="number">Nom de votre organisation</label>
+                        <input type="number" name="number" id="number" placeholder="Hôpitaux de Paris">
+
+                        <label id="for confirm-password" for="confirm-password">Confirmer le Mot de passe</label>
+                        <input type="text" name="confirm-password" id="confirm-password" placeholder="******">
+
+                      </div>
+                    </div>
+
+                  </form>
+                </div>
+            </div>
+          </div>
+
+        </div>
 </template>
 
 <style scoped>
@@ -41,10 +89,10 @@
         /* top: 0; */
         /* right: 0; */
         max-width:80%;
-        height:100px;
+        height: 70px;
         width: 1500px;
-        max-height: 10vh;
-        min-height: 9vh;
+        /* max-height: 7vh; */
+        /* min-height: 6.5vh; */
         margin:3em 0 0 6em
     }
 
@@ -54,11 +102,12 @@
     /* background: #000; */
     margin: 0 70px;
     }
-  .showcase-content{
+  .showcase-content form{
     /* background: aqua; */
     width: 750px;
     height: 713px;
     /* margin-right: auto; */
+    display: flex;
     }
 
   .showcase-content .info{
@@ -76,7 +125,7 @@
     height: 713px;
     margin-right: auto;
   }
-  .showcase-content-box form{
+  .showcase-content-box .form{
     margin: 0 2em;  
     /* background: red; */
     padding: 2em 0;
@@ -86,7 +135,11 @@
     /* padding: 1em 0; */
     }
   .showcase-content-box #mail, 
-  .showcase-content-box #pass{
+  .showcase-content-box #password,
+  .showcase-content-box #address,
+  .showcase-content-box #org,
+  .showcase-content-box #confirm-password,
+  .showcase-content-box #number{
     all: unset;
     background: #fff;
     border-radius: 10px;
