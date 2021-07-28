@@ -31,36 +31,51 @@
             <div class="container">
                 <div class="showcase-content">
                   <form>
+                    <div class="form-content">
+                      <div class="showcase-content-box">
+                        <div class="form left">
+                          <label id="formail" for="mail">Nom</label>
+                          <input type="text" name="mail" id="mail" placeholder="Magalie marchale">
 
-                    <div class="showcase-content-box">
-                      <div class="form left">
-                        <label id="formail" for="mail">Nom</label>
-                        <input type="text" name="mail" id="mail" placeholder="Magalie marchale">
+                          <label id="foraddress" for="address">Adresse email</label>
+                          <input type="text" name="address" id="address" placeholder="john.doe@domain.tld">
 
-                        <label id="foraddress" for="address">Adresse email</label>
-                        <input type="text" name="address" id="address" placeholder="john.doe@domain.tld">
+                          <label id="forpassword" for="password">Mot de passe</label>
+                          <input type="text" name="password" id="password" placeholder="******">
 
-                        <label id="forpassword" for="password">Mot de passe</label>
-                        <input type="text" name="password" id="password" placeholder="******">
+                        </div>
+                      </div>
 
+                      <div class="showcase-content-box">
+
+                        <div class="form right">
+                          <label id="fororg" for="org">Nom de votre organisation</label>
+                          <input type="text" name="org" id="org" placeholder="Hôpitaux de Paris">
+
+                          <label id="fornumber" for="number">Numéro</label>
+                          <input type="tel" name="number" id="number" placeholder="53 555 555">
+
+                          <label id="for confirm-password" for="confirm-password">Confirmer le Mot de passe</label>
+                          <input type="text" name="confirm-password" id="confirm-password" placeholder="******">
+
+                        </div>
                       </div>
                     </div>
+                    <div class="submit-content">
+                      <p class="info"> <input type="checkbox">Je confirme avoir lu et accepté les <span class="red">les conditions générales de vente</span> </p>
+                      <p class="info"> <input type="checkbox">Je confirme avoir lu et accepté les <span class="red">les conditions générales de vente</span> </p>
 
-                    <div class="showcase-content-box">
+                      <div class="submit">
+                        <span>Vos données sont stocké <span class="blue">sur nos serveurs cryptés</span></span>
+                        <!-- <input type="submit" id="submit" value="Valider"> -->
+                        <router-link to="Confirmer" >
+                          <button id="submit">
+                          Valider
 
-                      <div class="form right">
-                        <label id="fororg" for="org">Nom de votre organisation</label>
-                        <input type="text" name="org" id="org" placeholder="Hôpitaux de Paris">
-
-                        <label id="fornumber" for="number">Nom de votre organisation</label>
-                        <input type="number" name="number" id="number" placeholder="Hôpitaux de Paris">
-
-                        <label id="for confirm-password" for="confirm-password">Confirmer le Mot de passe</label>
-                        <input type="text" name="confirm-password" id="confirm-password" placeholder="******">
-
+                          </button>
+                        </router-link>
                       </div>
                     </div>
-
                   </form>
                 </div>
             </div>
@@ -70,7 +85,7 @@
 </template>
 
 <style scoped>
-.se-con-container{
+  .Inscription{
 		font-family: 'Open Sans', sans-serif;
 }
   .nav-content{
@@ -96,16 +111,41 @@
         margin:3em 0 0 6em
     }
 
- 
+  .ins-content{
+    
+  }
   
+  .ins-content h1{
+    display: block;
+    margin: .5em 0;
+    font-size: 88px;
+    text-align: center;
+    font-weight: bold
+  }
+  
+  .ins-content img{
+    display: block;
+    margin: 3em auto;
+    width: 1000px;  
+    height: 120px;
+  }
+
+
   .showcase-section{
     /* background: #000; */
-    margin: 0 70px;
     }
-  .showcase-content form{
+    
+  .showcase-content {
+    margin: 0 5em;
+    /* background: red; */
+    display: flex;
+    justify-content: space-between;
+    /* width: 1200px;     */
+  }
+  .showcase-content .form-content{
     /* background: aqua; */
-    width: 750px;
-    height: 713px;
+    /* width: 750px; */
+    /* height: 713px; */
     /* margin-right: auto; */
     display: flex;
     }
@@ -120,19 +160,78 @@
 
   .showcase-content .showcase-content-box{
     background: #F5F6F7;
-    font-size: 27px;
-    width: 100%;
-    height: 713px;
-    margin-right: auto;
-  }
-  .showcase-content-box .form{
-    margin: 0 2em;  
     /* background: red; */
-    padding: 2em 0;
+    font-size: 27px;
+    /* height: 713px; */
+    width: 95%;
+    /* margin-right: auto; */
   }
-  .showcase-content-box #formail{
+   .showcase-content-box:nth-of-type(1){
+     border-top-left-radius: 73px;
+     /* border-top-right-radius: 73px; */
+   }
+   .showcase-content-box:nth-of-type(2){
+     border-top-right-radius: 73px;
+   }
+   .submit-content{
+     border-bottom-right-radius: 73px;
+     border-bottom-left-radius: 73px;
+     background: #F5F6F7;
+     width: 100%;
+    padding: 1em 0;
+   }
+   .submit-content .info{
+     margin: 1em 1em;
+     font-size: 30px;
+     background: #F5F6F7;
+    color: #838EAB;
+   }
+   
+   .submit-content .info input{
+     /* all: unset; */
+     /* padding: 1em; */
+     margin: 1em 2em;
+     width: 30px;
+     height: 30px;
+      border-radius: 10px;
+/* border:  */
+     /* border: none;*/
+     outline: 1px solid #000;; 
+   }
+   .submit-content .info .red{color: red;}
+
+  .submit{
+    text-align: right;
+    margin: 2em;
+     font-size: 30px;
+    color: #838EAB;
+    cursor: pointer;
+}
+   .submit span.blue{
+     color: var(--nav-blue);
+   }
+  .submit #submit{
+    all: unset;
+    text-align: center;
+    color: #fff;
+    margin: 0 2em;
+    width: 300px;
+    height: 100px;
+    background: var(--primary-saf-color);
+    font-size: 30px;
+    border-radius: 30px;
+    font-weight: bold;
+  }
+
+  .showcase-content-box .form{
+    margin: 0em;  
+    padding: 2em 1.5em 0 1.5em;
+  }
+  .showcase-content-box label{
+    font-weight: bold;
+
     /* background: rgb(190, 39, 39); */
-    /* padding: 1em 0; */
+    padding: 1em 0;
     }
   .showcase-content-box #mail, 
   .showcase-content-box #password,
@@ -147,7 +246,7 @@
     margin: 1em 0;
     font-size: 27px;
     height: 80px;
-    width: 624px;
+    width: 550px;
     padding: 0 .5em;
   }
 

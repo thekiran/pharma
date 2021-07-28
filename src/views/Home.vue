@@ -27,9 +27,9 @@
                </router-link>
             </div>
 
-          <div class="btn-fill-primary">
-            <button>Essayer gratuitement</button>
-          </div>
+          <router-link to="/Inscription" class="btn-fill-primary">
+                 <button>Essayer gratuitement</button>
+          </router-link>
           </div>
 
       <!-- <router-link to="/">Home</router-link> |
@@ -51,7 +51,7 @@
           <p class="text-black">Ne faites plus attendre vos patients, Pharma-You vous
             <br> facilite la vie en vous faisant gagner du temps et de l'argent.</p>
 
-          <a href="#" class="main-btn">Essayer gratuitement</a>
+          <router-link to="/Inscription" class="main-btn">Essayer gratuitement</router-link>
           <span class="text-sm">Frais de livraison livraison offert le premier mois</span>
         </div>
         <div class="home-showcase">
