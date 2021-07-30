@@ -74,7 +74,12 @@
 
                       <div class="submit">
                         <span>Vos données sont stocké <span class="blue">sur nos serveurs cryptés</span></span>
-                        <input type="submit" id="submit" value="Finaliser">
+                        <!-- <input type="submit" id="submit" value="Finaliser"> -->
+                        <router-link to="Passer">
+                            <button  id="submit">
+                                Finaliser
+                            </button>
+                        </router-link>
                       </div>
                     </div>
                   </form>

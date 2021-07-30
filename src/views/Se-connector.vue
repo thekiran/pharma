@@ -183,3 +183,37 @@
   }
   
 </style>
+
+
+// Responsive styles 
+
+<style scoped>
+
+@media(max-width:1460px){
+
+  .showcase-img{
+    max-width: 45vw;
+    max-height: 100vh;
+    width: 1083px;
+    height: 1176px;
+  }
+   .showcase-content{
+    /* background: aqua; */
+    width: 600px;
+ }
+
+
+ 
+  .showcase-content-box #mail, 
+  .showcase-content-box #pass{
+    width: 100%;
+  }
+
+  
+  .showcase-content-box #submit-se-con{
+    background: var(--primary-saf-color);
+    width: 500px;
+  }
+
+}
+</style>

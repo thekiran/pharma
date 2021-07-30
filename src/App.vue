@@ -71,4 +71,7 @@
 		margin: 0 auto;;
 	}
 
+	img{
+		object-fit: contain;
+	}
 </style>

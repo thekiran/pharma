@@ -256,6 +256,8 @@ export default {
 // Showcase section styles
 
 <style scoped>
+
+
   .showcase-section{
     margin: 7em 0;
     text-align: center;
@@ -288,4 +290,35 @@ export default {
     line-height: 1.3;
     color: #212121;
 }
+</style>
+
+
+
+// Responsive styles 
+
+<style scoped>
+@media(max-width:1450px){
+  .home{
+    font-size: .95em;
+  }
+  .home-content h1{
+    font-size: 40px;
+  }
+  .home-content .text-black{
+    font-size: 20px;
+  }
+}
+@media(max-width:1350px){  
+  .home{
+    font-size: .9em;
+  }
+   .home-content h1{
+    font-size: 35px;
+  }
+   .home-content .text-black{
+    font-size: 18px;
+  }
+}
+
+
 </style>
