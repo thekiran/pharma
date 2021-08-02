@@ -341,12 +341,12 @@ export default {
   height: 50px;
   text-align: center;
   color:#153288;
-  opacity: 53%;
+  opacity:  0.5;
 }
 
 .table-content-row p:nth-of-type(1),
 .table-content-row p:nth-of-type(5){
-  opacity: 100%;
+  opacity: 1;
 }
 .table-content-row span:nth-of-type(2),
 .table-content-row span:nth-of-type(3){
