@@ -1,0 +1,19 @@
+<template>
+
+  <svg id="Définir_les_adresses" data-name="Définir les adresses" xmlns="http://www.w3.org/2000/svg" style="width:100%" height="131" viewBox="0 0 1253 131">
+    <g id="Group_2957" data-name="Group 2957" transform="translate(0.102 -0.461)">
+      <g id="Rectangle_363" data-name="Rectangle 363" transform="translate(-0.101 0.461)" fill="#fff" stroke="#d11c48" stroke-width="1">
+        <rect width="1253" height="131" rx="65.5" stroke="none"/>
+        <rect x="0.5" y="0.5" width="1252" height="130" rx="65" fill="none"/>
+      </g>
+      <path id="Rectangle_364" data-name="Rectangle 364" d="M65.5,0H142a0,0,0,0,1,0,0V65.5A65.5,65.5,0,0,1,76.5,131h-11A65.5,65.5,0,0,1,0,65.5v0A65.5,65.5,0,0,1,65.5,0Z" transform="translate(-0.102 0.461)" fill="#d11c48"/>
+      <text id="Rajouter_une_adresse_" data-name="Rajouter une adresse " transform="translate(170.899 86.461)" fill="#d11c48" font-size="69" font-family="SegoeUI-Bold, Segoe UI" font-weight="700"><tspan x="0" y="0">Rajouter une adresse </tspan></text>
+      <g id="__TEMP__SVG__" transform="translate(40.898 26.961)">
+        <path id="Path_404" data-name="Path 404" d="M23.733,53.068,9.379,32.8A19.188,19.188,0,0,1,23.733,1.211,19.046,19.046,0,0,1,42.59,20.374a19.329,19.329,0,0,1-4.243,12.092Zm0-47.143A14.308,14.308,0,0,0,9.59,20.374,14.591,14.591,0,0,0,13.1,29.8L23.733,44.865,34.647,29.5a14.709,14.709,0,0,0,3.229-9.123A14.308,14.308,0,0,0,23.733,5.925Z" transform="translate(9.267 -1.211)" fill="#fff"/>
+        <path id="Path_405" data-name="Path 405" d="M17.906,8.953a4.714,4.714,0,1,1-4.714-4.714A4.714,4.714,0,0,1,17.906,8.953Z" transform="translate(19.808 7.547)" fill="#fff"/>
+        <path id="Path_406" data-name="Path 406" d="M62.5,7.267H57.783v4.714H62.5v33H5.925v-33H10.64V7.267H5.925a4.714,4.714,0,0,0-4.714,4.714v33A4.714,4.714,0,0,0,5.925,49.7H62.5a4.714,4.714,0,0,0,4.714-4.714v-33A4.714,4.714,0,0,0,62.5,7.267Z" transform="translate(-1.211 16.305)" fill="#fff"/>
+      </g>
+    </g>
+  </svg>
+  
+</template>

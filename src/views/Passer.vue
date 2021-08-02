@@ -5,7 +5,7 @@
         <TopNav />
 
     <div class="passer">
-        <MainNavbar />
+        <MainNavbar active='Passer' />
       
         <div class="passer-content">
             <h1>Passer commande en 2 clics</h1>

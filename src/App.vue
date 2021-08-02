@@ -61,6 +61,9 @@
 		--primary-saf-color: #FF5614;
 		--nav-blue: #3498DB;
 		--black: #000000;
+
+		max-width: 100%;
+		overflow-x: hidden;
 	}
 
 	.container{

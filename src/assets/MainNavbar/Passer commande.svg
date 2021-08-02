@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="258.089" height="32" viewBox="0 0 258.089 32">
+  <g id="Passer_commande" data-name="Passer commande" transform="translate(-23.664 -15.212)">
+    <text id="Passer_commande-2" data-name="Passer commande" transform="translate(77.753 40.213)" fill="#8a8f9c" font-size="23" font-family="OpenSans-Semibold, Open Sans" font-weight="600"><tspan x="0" y="0">Passer commande</tspan></text>
+    <path id="inbox" d="M29.971,73.066l-5.55-7.979A2.535,2.535,0,0,0,22.339,64H8.086A2.535,2.535,0,0,0,6,65.088L.454,73.066A2.535,2.535,0,0,0,0,74.514v7.234a2.535,2.535,0,0,0,2.535,2.535H27.89a2.535,2.535,0,0,0,2.535-2.535V74.514A2.535,2.535,0,0,0,29.971,73.066ZM8.086,66.535H22.339l4.115,5.916h-6.47l-1.69,3.381H12.131l-1.69-3.381H3.97Zm19.8,15.213H2.535V74.987H8.874l1.69,3.381h9.3l1.69-3.381H27.89Z" transform="translate(23.664 -42.026)" fill="#8a8f9c"/>
+  </g>
+</svg>

@@ -31,6 +31,36 @@ const routes = [
     path: '/PasserCom',
     name: 'PasserCom', 
     component: () => import('../views/PasserCom.vue')
+  },
+  {
+    path: '/Mes',
+    name: 'Mes', 
+    component: () => import('../views/Mes.vue')
+  },
+  {
+    path: '/Mes-address',
+    name: 'Mes-address', 
+    component: () => import('../views/Mes-add.vue')
+  },
+  {
+    path: '/Mes-Fac',
+    name: 'Mes-Fac', 
+    component: () => import('../views/Mes-Fac.vue')
+  },
+  {
+    path: '/Page-Fac',
+    name: 'Page-Fac', 
+    component: () => import('../views/Page-Fac.vue')
+  },
+  {
+    path: '/Nous',
+    name: 'Nous', 
+    component: () => import('../views/Nous.vue')
+  },
+  {
+    path: '/Popup',
+    name: 'Popup', 
+    component: () => import('../views/Popup.vue')
   }
 ]
 

@@ -63,15 +63,31 @@
     </g>
     <text id="Je_veux_être_livré_à_une_autre_adresse" data-name="Je veux être livré à une autre adresse" transform="translate(-767.928 -375.308)" font-size="35" font-family="SegoeUI, Segoe UI" opacity="0.58"><tspan x="0" y="38">JE VEUX ÊTRE LIVRÉ À UNE AUTRE ADRESSE</tspan></text>
     <text id="Ou" transform="translate(-358.093 -16.444)" font-size="35" font-family="SegoeUI, Segoe UI"><tspan x="-23.097" y="38">Ou</tspan></text>
+     <a @click="this.$router.push('/popup')" style="cursor: pointer" id="popup-trigger">
     <g id="card" transform="translate(-478.869 56.401)">
-      <g transform="matrix(1, 0, 0, 1, -354.13, -463.21)" filter="url(#bg)">
-        <path id="bg-2" data-name="bg" d="M48.826,0h419.9c26.966,0,48.826,18.682,48.826,41.727s-21.86,41.727-48.826,41.727H48.826C21.86,83.455,0,64.773,0,41.727S21.86,0,48.826,0Z" transform="translate(354.13 463.21)" fill="#d11c48"/>
-      </g>
+        <g transform="matrix(1, 0, 0, 1, -354.13, -463.21)" filter="url(#bg)">
+          <path id="bg-2" data-name="bg" d="M48.826,0h419.9c26.966,0,48.826,18.682,48.826,41.727s-21.86,41.727-48.826,41.727H48.826C21.86,83.455,0,64.773,0,41.727S21.86,0,48.826,0Z" transform="translate(354.13 463.21)" fill="#d11c48"/>
+        </g>
       <g id="num" transform="translate(48.118 18.728)">
         <text id="Ajouter_une_nouvelle_adresse" data-name="Ajouter une nouvelle adresse" transform="translate(0 37)" fill="#fff" font-size="34" font-family="SegoeUI, Segoe UI"><tspan x="0" y="0">Ajouter une nouvelle adresse</tspan></text>
       </g>
     </g>
+      </a>
+
+
+
   </g>
 </svg>
 
 </template>
+
+<script>
+
+  // window.onload = () =>{
+  //   const popupTrigger  = document.querySelector('#popup-trigger')
+  //   popupTrigger.addEventListener('click', e => {
+  //     e.preventDefault()
+  //     // this.$router.push('/popup')
+  //   })
+  // }
+</script>

@@ -61,13 +61,11 @@
                 <AdressIcon />
             </div>
 
-            <!-- <div class="Ajou">
-                <Ajou />
-            </div> -->
             .
             <div class="Calender">
               <img src="../assets/passer/main-content/Group.png" alt="">
             </div>
+            
             <div class="DateIcon">
               <DateIcon />
             </div>
