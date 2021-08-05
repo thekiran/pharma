@@ -26,18 +26,20 @@
                       <div class="table-border-right four"></div>
                       <div class="table-border-right five"></div>
 
-                  <div class="head-row">
-                        <h5>Reféférence</h5>
-                        <h5>Livré le</h5>
-                        <h5>Etat</h5>
-                        <h5>Facture</h5>
-                        <h5>Facture</h5>
-                        <h5 style="border-top-right-radius: 71px;border-bottom-right-radius:71px">Réglement</h5>
-                  </div>
 
                   <div class="table-content-rows">
 
-                      <div class="table-content-row">
+                    <div class="head-row">
+                          <h5>Reféférence</h5>
+                          <h5>Livré le</h5>
+                          <h5>Etat</h5>
+                          <h5>Facture</h5>
+                          <h5>Facture</h5>
+                          <h5 style="border-top-right-radius: 71px;border-bottom-right-radius:71px">Réglement</h5>
+                    </div>
+
+
+                      <div class="table-content-row first-row">
                         <p class="table-ref">
                           #RZG960 
                           <img src="../assets/mes/edit.png" alt=""></p>
@@ -49,7 +51,7 @@
 
                         <p class="table-commande">Livré</p>
                         <p class="table-montant">1200 €</p>
-                        <router-link to="/page-fac">
+                        <router-link to="/page-fac" id="fac-btn">
                           <span class="img-fac">
                                 <img src="../assets/mes-fac/facture.png" alt="">
                           </span>
@@ -631,8 +633,7 @@ export default {
 @media(max-width:1500px){
  
   .left-border{
-  background: rgb(0,0,0);
-  width: 
+  /* background: rgb(0,0,0); */
   }
 }
 
@@ -654,14 +655,14 @@ export default {
     /* max-width: 850px; */
     /* margin: 2em auto; */
 }
-.table-content-rows h5{
+.table-content-rows .table-content-row h5{
     font-size: 30px;
     color: #59626A;
     opacity: 58%;
     display: block;
     margin: 2em 0 1em 0em;
 }
-.table-content-rows h5:nth-of-type(1){
+.table-content-rows .table-content-row h5:nth-of-type(1){
     margin: 2em 0 1em;
     
 }
@@ -705,3 +706,102 @@ export default {
 }
 
 </style>
+
+
+
+<style scoped>
+
+    @media(max-width:1550px){
+
+      .passer{
+        flex-direction: column;
+        align-items: center;
+    }
+      
+      .table-content-rows{
+        width: 78vw;
+        overflow-y:auto;
+        /* overflow-x:hidden;  */
+      }
+
+
+      .table-content-row,.head-row{
+        width: 1201px;
+        max-width: 1201px;
+        overflow-x: auto;
+      }
+
+      .table-border-right{opacity: 0;}
+
+      .passer-content{
+        max-width: 95%;
+        margin: .25em auto;
+      }
+      .head-line {
+        max-width: 90vw;
+
+      }
+      .head-line svg {
+        width: 100% !important;
+      }
+      .passer-content h1{
+        font-size: 7vw;
+          }
+
+          .left-border{width: 9vw;}
+
+      .head-row h5 {
+          font-size: 3vw;
+      }
+      .table-content-row p {
+          display: flex;
+          font-size: 2.5vw;
+      }
+    }
+
+    @media(max-width: 768px){
+       .table-content-row p ,.head-row h5:nth-of-type(1){
+          font-size: 3vw !important;
+      }
+      .head-row h5{
+        width: 12%;
+        text-align: center;
+      }
+      
+      .head-row h5:nth-of-type(3){
+        padding-left: 0px;
+      }
+      .table-content-row .table-ref,
+      .table-content-row .date-ref,
+      .table-content-row .table-commande,
+      .table-content-row .table-montant,
+      .table-content-row a,
+      .table-content-row .table-reg{
+        width: 13%;
+        /* max-width: 12%; */
+        /* background: red; */
+      }
+      .table-content-rows {
+         /* width: 80vw; */
+      }
+
+      .table-content-row .table-reg:nth-of-type(1) {
+        /* margin: 0 0em 0 5vw ; */
+      }
+
+      #fac-btn{
+        width: 16%;
+        /* background: red; */
+      }
+    }
+
+
+   @media(max-width: 500px){
+       .table-content-row p ,.head-row h5:nth-of-type(1){
+          font-size: 15px !important;
+       }
+   }
+</style>
+
+
+

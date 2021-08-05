@@ -484,3 +484,152 @@ export default {
 }
 
 </style>
+
+
+<style scoped>
+
+    @media(max-width:1550px){
+
+      .passer{
+        flex-direction: column;
+        align-items: center;
+    }
+      
+      .table-content-rows{
+        width: 78vw;
+        overflow-y:auto;
+        /* overflow-x:hidden;  */
+      }
+
+
+      .table-content-row,.head-row{
+        width: 1201px;
+        max-width: 1201px;
+        overflow-x: auto;
+      }
+
+      .table-border-right{opacity: 0;}
+
+      .passer-content{
+        max-width: 95%;
+        margin: .25em auto;
+      }
+      .head-line {
+        max-width: 90vw;
+
+      }
+      .head-line svg {
+        width: 100% !important;
+      }
+      .passer-content h1{
+        font-size: 7vw;
+          }
+
+          .left-border{width: 9vw;}
+
+      .head-row h5 {
+          font-size: 3vw;
+      }
+      .table-content-row p {
+          display: flex;
+          font-size: 2.5vw;
+      }
+
+      .file-input{width: 100%;}
+
+
+    }
+
+
+
+    @media(max-width: 1300px){
+      .passer-content{
+        width: 100%;
+      }
+        .file-input-large, .passer-card, .AdressIcon, .Ajou, .DateIcon {
+          width: 95vw;
+          margin: 0 auto;
+        }
+
+        .Calender{width: 95vw;margin: 0 auto;}
+        .AdressIcon{margin: 0;}
+
+
+        #Raj img, #Date img {
+          margin: 0
+        }
+        #Raj{
+          width: 95%;
+          margin: 0 auto;
+        }
+        #Raj img{
+           height: 100%;
+          width: 100%;
+            margin: 0
+          }
+
+        #Date img {
+          height: 100%;
+          width: 100%;
+          margin: 0 
+        }
+
+    }
+
+
+
+    @media(max-width: 768px){
+       .table-content-row p ,.head-row h5:nth-of-type(1){
+          font-size: 3vw !important;
+      }
+      .head-row h5{
+        width: 12%;
+        text-align: center;
+      }
+      
+      .head-row h5:nth-of-type(3){
+        padding-left: 0px;
+      }
+      .table-content-row .table-ref,
+      .table-content-row .date-ref,
+      .table-content-row .table-commande,
+      .table-content-row .table-montant,
+      .table-content-row a,
+      .table-content-row .table-reg{
+        width: 13%;
+        /* max-width: 12%; */
+        /* background: red; */
+      }
+      .table-content-rows {
+         /* width: 80vw; */
+      }
+
+      .table-content-row .table-reg:nth-of-type(1) {
+        /* margin: 0 0em 0 5vw ; */
+      }
+
+      #fac-btn{
+        width: 16%;
+        /* background: red; */
+      }
+
+      .passer-info-item{
+        flex-direction: column;
+        align-items: center;
+      }
+      .passer-info-item h5 {
+        font-size: 4vw;
+        margin: 10px 0;
+      }
+
+
+
+    }
+
+
+   @media(max-width: 500px){
+       .table-content-row p ,.head-row h5:nth-of-type(1){
+          font-size: 15px !important;
+       }
+   }
+</style>

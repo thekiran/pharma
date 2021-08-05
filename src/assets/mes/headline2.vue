@@ -1,7 +1,7 @@
 <template>
   
 
-<svg xmlns="http://www.w3.org/2000/svg" width="1188" height="131" viewBox="0 0 1188 131">
+<svg xmlns="http://www.w3.org/2000/svg" width="1188" max-height="131" viewBox="0 0 1188 131">
   <g id="En_cours_de_livraison" data-name="En cours de livraison" transform="translate(0.102 -47.46)">
     <g id="Group_2957" data-name="Group 2957" transform="translate(0 47)">
       <g id="Rectangle_363" data-name="Rectangle 363" transform="translate(-0.101 0.46)" fill="#fff" stroke="#d11c48" stroke-width="1">

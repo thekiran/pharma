@@ -84,6 +84,7 @@
         </div>
 </template>
 
+
 <style scoped>
   .Inscription{
 		font-family: 'Open Sans', sans-serif;
@@ -310,3 +311,156 @@
   }
   
 </style>
+
+// Responsive styles
+<style scoped>
+    @media(max-width:1400px){
+        .showcase-content {
+            margin: 0 1em;
+        }
+        .submit a{
+        margin: 2em 0;
+        }
+    }
+
+    @media(max-width:1350px){
+
+      .showcase-content .form-content {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+
+      }
+      .ins-content img{
+        width: 90%;
+      }
+
+      .showcase-content-box #mail, .showcase-content-box #password, .showcase-content-box #address, .showcase-content-box #org, .showcase-content-box #confirm-password, .showcase-content-box #number{
+        margin: 1em auto;
+        max-width: 65vw;
+        font-size: 20px;
+      }
+
+      .submit-content {
+        background: inherit;
+      }
+      .submit-content .info {
+        background: inherit;
+      }
+  
+    }
+
+    @media(max-width:768px){
+      
+        .nav-content .container {
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .left-nav {
+          margin: 2em 0 0 0em;
+        }
+
+      .nav-banner img{
+        max-width: 99%;
+         margin: 1em 0 0 0.2em;
+      }
+
+      .ins-content h1{
+        font-size: 58px;
+        }
+
+
+      .ins-content img {
+        margin: 1em auto;
+        width: 99%;
+        }
+
+      .showcase-content-box .form {
+        padding: 2em .5em 0 .5em;
+    }
+
+      .showcase-content .showcase-content-box {
+        font-size: 20px;
+      }
+
+    .showcase-content-box label {
+        margin: 0 1em;
+    }
+
+      .submit a{
+        margin: 2em 0;
+        display: block;
+      }
+
+
+      .submit-content {
+        width:80vw;
+        margin: 0 auto;
+        /* background: red */
+
+      }
+      .submit-content .info,.submit span {
+        /* margin: 1em 1em; */
+        font-size: 3vw;
+      }
+      .submit-content .info input{
+          width: 20px;
+          height: 20px;
+        }
+
+      .submit-content .info input{
+        outline: 0px solid #000;
+
+      }
+
+  }
+
+</style>
+
+// Mobile Responsive styles
+
+<style scoped>
+
+  @media(max-width:576px){
+    .showcase-content-box label {
+        /* margin: 0 3em; */
+        width: 150px;
+        display: block;
+      }
+
+        .submit a{
+        margin: 1em 0;
+      }
+
+
+      .showcase-content-box #mail, .showcase-content-box #password, .showcase-content-box #address, .showcase-content-box #org, .showcase-content-box #confirm-password, .showcase-content-box #number{
+        margin: 1em;
+      }
+
+
+      .submit #submit {
+          margin: 0em;
+          width: 200px;
+          height: 70px;
+      }
+
+
+  }
+
+  @media(max-width:350px){
+
+    .ins-content h1{
+        font-size: 28px;
+    }
+
+    .ins-content img {
+      margin: .1em auto;
+    }
+
+  }
+
+
+</style>
+

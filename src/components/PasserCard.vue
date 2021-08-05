@@ -1,5 +1,5 @@
 <template>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:100%" height="541" viewBox="0 0 1237 541">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:100%" max-height="541" viewBox="0 0 1237 541">
   <defs>
     <filter id="Rectangle_414" x="0" y="0" width="328" height="326" filterUnits="userSpaceOnUse">
       <feOffset dy="10" input="SourceAlpha"/>

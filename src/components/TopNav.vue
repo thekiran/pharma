@@ -197,7 +197,7 @@ export default {
 
   .home-showcase{
     width: 60%;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 0;
   }
   .home-showcase img{
@@ -253,5 +253,23 @@ export default {
   .nav-links .link.eight{
     /* background: red; */
     margin: 8em 0;
+  }
+
+  @media(max-width: 768px){
+    .right-nav {
+        margin: 0
+      }
+      .logo {
+      margin: 10px 1em;
+      }
+  }
+  @media(max-width: 500px){
+ .logo {
+      margin: 0
+      }
+
+      .right-nav img{
+        width: 50vw !important;
+      }
   }
 </style>

@@ -24,6 +24,8 @@
                       <div class="table-border-right three"></div>
                       <div class="table-border-right four"></div>
 
+
+                  <div class="table-content-rows">
                   <div class="head-row">
                         <h5>Reféférence</h5>
                         <h5>Date de <br> commande</h5>
@@ -31,8 +33,6 @@
                         <h5>Montant</h5>
                         <h5 style="border-top-right-radius: 71px;border-bottom-right-radius:71px">Réglement</h5>
                   </div>
-
-                  <div class="table-content-rows">
 
                       <div class="table-content-row">
                         <p class="table-ref">
@@ -102,15 +102,17 @@
 
                 <div class="table-content">
 
-                  <div class="head-row">
-                        <h5>Reféférence</h5>
-                        <h5 style="white-space:nowrap">Livraison prévue <br> pour le</h5>
-                        <h5>Tracking <br> livraison</h5>
-                        <h5>Tracking <br> livraison</h5>
-                        <h5 style="border-top-right-radius: 71px;border-bottom-right-radius:71px">Chaîne du <br> Froid</h5>
-                  </div>
 
                   <div class="table-content-rows">
+
+                      <div class="head-row">
+                            <h5>Reféférence</h5>
+                            <h5 style="white-space:nowrap">Livraison prévue <br> pour le</h5>
+                            <h5>Tracking <br> livraison</h5>
+                            <h5>Tracking <br> livraison</h5>
+                            <h5 style="border-top-right-radius: 71px;border-bottom-right-radius:71px">Chaîne du <br> Froid</h5>
+                      </div>
+
                       <div class="table-border-right one"></div>
                       <div class="table-border-right two"></div>
                       <div class="table-border-right three"></div>
@@ -187,6 +189,9 @@
 
                 <div class="table-content">
 
+
+                  <div class="table-content-rows">
+
                   <div class="head-row">
                         <h5>Reféférence</h5>
                         <h5 style="white-space:nowrap">Livraison prévue <br> pour le</h5>
@@ -195,7 +200,6 @@
                         <h5 style="border-top-right-radius: 71px;border-bottom-right-radius:71px">Chaîne du <br> Froid</h5>
                   </div>
 
-                  <div class="table-content-rows">
                       <div class="table-border-right one"></div>
                       <div class="table-border-right two"></div>
                       <div class="table-border-right three"></div>
@@ -683,7 +687,7 @@ export default {
 
   .table-content{
   max-width: 1000px;
-  overflow: hidden;
+  /* overflow: hidden; */
   }
 }
 @media(max-width:1500px){
@@ -693,7 +697,7 @@ export default {
   }
   .table-content-row p, .head-row{ 
     font-size: 20px;
-    background: rgba(0, 0, 0, 0.349);
+    /* background: rgba(0, 0, 0, 0.349); */
   }
   .table-content{
 
@@ -706,5 +710,76 @@ export default {
 }
 
 
+</style>
+
+<style scoped>
+
+    @media(max-width:1550px){
+
+      .passer{
+        flex-direction: column;
+        align-items: center;
+    }
+      
+      .table-content-rows{
+        /* width: 1200px; */
+        overflow-y:auto;
+        /* overflow-x:hidden;  */
+      }
+
+      .head-row h5:nth-of-type(1){
+        padding: 1em 0;
+        text-align: left;
+      }
+
+      .table-content-row,.head-row{
+        width: 1201px;
+        max-width: 1201px;
+        overflow-x: auto;
+      }
+
+      .table-border-right{opacity: 0;}
+
+      .passer-content{
+        max-width: 95%;
+        margin: .25em auto;
+      }
+      .head-line {
+        max-width: 90vw;
+
+      }
+      .head-line svg {
+        width: 100% !important;
+      }
+      /* .passer-content h1{
+        font-size: 7vw;
+          } */
+
+          .left-border{width: 9vw;}
+
+      .head-row h5 {
+          /* font-size: 3vw; */
+      }
+      .table-content-row p {
+          display: flex;
+          /* font-size: 5vw; */
+      }
+
+      .file-input{width: 100%;}
+
+
+    }
+
+
+    @media (max-width:900px) {
+       .table-content-rows{
+        width: 78vw;
+       }
+        .table-content-row p {
+          font-size: 5vw;
+      }
+
+
+    }
 </style>
 

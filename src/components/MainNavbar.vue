@@ -293,7 +293,7 @@ export default {
 
   .home-showcase{
     width: 60%;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 0;
   }
   .home-showcase img{
@@ -354,6 +354,42 @@ export default {
 
 <style scoped>
 @media(max-width:1700px){
-.side-nav{margin: 0;}
-}
+      .side-nav{margin: 0;}
+  }
+
+  @media(max-width:1500px){
+      
+      .profile-info{
+        margin: 2em 0;
+      }
+
+      .nav-links{
+        max-width: 300px;
+      }
+      
+      .nav-links .link.one[data-v-66dd064e] {
+            margin: 1em 0 0em;
+      }
+
+      .nav-links svg{
+        margin: 1em 0em !important;
+      }
+
+      .nav-links .link.eight  {
+        margin: 1em 0;
+      }
+
+    
+      
+    }
+
+
+      @media(max-width:576px){
+        .profile-info h5{
+          font-size: .75em;
+        }
+        .nav-links svg{margin: 10px 0 !important;padding: 10px 0 !important;}
+      }
+    
+
 </style>

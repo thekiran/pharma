@@ -1,5 +1,5 @@
 <template>
-    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:100%"  height="677.318" viewBox="0 0 1178 677.318">
+    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="width:100%"  max-height="677.318" viewBox="0 0 1178 677.318">
   <defs>
     <filter id="bg" x="330.131" y="443.209" width="565.553" height="131.455" filterUnits="userSpaceOnUse">
       <feOffset dy="4" input="SourceAlpha"/>

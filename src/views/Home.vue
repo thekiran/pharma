@@ -243,7 +243,7 @@ export default {
 
   .home-showcase{
     width: 60%;
-    overflow: hidden;
+    /* overflow: hidden; */
     z-index: 0;
   }
   .home-showcase img{
@@ -319,6 +319,161 @@ export default {
     font-size: 18px;
   }
 }
+  @media(max-width:1150px){  
+    .left-nav ul{
+    font-size: 13px;
+    }
 
+    .btn-clear{
+      font-size: 25px;
+    }
+    .btn-fill-primary{
+      font-size: 18px;
+    }
+
+  }
+  @media(max-width:1000px){
+    
+     .left-nav ul{
+    font-size: 12px;
+    }
+    .btn-clear{
+          font-size: 20px;
+        }
+        .btn-fill-primary{
+          font-size: 15px;
+        }
+
+      }
+
+
+  @media(max-width:900px){  
+    .nav-content{
+      flex-direction: column;
+      max-width: 600px;
+      margin: 0 auto;
+   }
+  }
+
+      @media(max-width:768px){  
+        
+        .home-container {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .home-content .main-btn{
+          margin: 2em auto
+        }
+    
+        .home-content {
+            width: 100%;
+        }
+        .home-showcase {
+        width: 100%;
+        }
+    
+      }
 
 </style>
+
+
+// Mobile Responsive styles
+
+
+<style scoped>
+
+
+    @media(max-width:576px){
+  
+      .home-content{
+        margin: auto 0 auto 0;
+      }
+
+      .home-content h1 {
+        font-size: 30px;
+      }
+  
+      .home-content .text-blue{
+      font-size: 23px;
+      }
+      .home-content .text-black {
+        font-size: 15px;
+      }
+
+    .showcase-head {
+      font-size: 26px;
+      }
+      .showcase-content {
+        flex-direction: column;
+      }
+      .showcase-content .showcase-item{
+        margin: 2em 0;
+      }
+    }
+
+  @media(max-width:500px){
+      .logo{
+        height: 80px;
+        width: 80px;
+        }
+        
+     .left-nav,.right-nav {
+       flex-direction: column;
+      align-items: center;
+}
+     .left-nav ul{
+    font-size: 10px;
+    }
+    .btn-clear{
+          font-size: 18px;
+        }
+        .btn-fill-primary{
+          font-size: 13px;
+        }
+      }
+
+
+  @media(max-width:500px){
+      .home-content h1 {
+        font-size: 22px;
+      }
+  
+      .home-content .text-blue{
+      font-size: 20px;
+      }
+      .home-content .text-black {
+        font-size: 13px;
+      }
+  }
+
+
+  @media(max-width:330px){
+    
+     .left-nav ul{
+    font-size: 8px;
+    white-space: nowrap
+    }
+    .btn-clear{
+          font-size: 20px;
+        }
+        .btn-fill-primary{
+          font-size: 15px;
+        }
+      }
+
+        @media(max-width:400px){
+      .home-content h1 {
+        font-size: 20px;
+      }
+  
+      .home-content .text-blue{
+      font-size: 18px;
+      }
+      .home-content .text-black {
+        font-size: 10px;
+      }
+  }
+
+</style>
+
